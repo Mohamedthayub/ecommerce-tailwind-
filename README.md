@@ -1,6 +1,5 @@
 # Frontend Mentor - E-commerce product page
 
-## Deploying your project
 
 ## 🔗 Live Demo  
 [Eccomerce-project](https://thayub-eccomerce-project.netlify.app/)
