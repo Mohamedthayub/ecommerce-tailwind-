@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
-  <title>Frontend Mentor | E-commerce product page</title>
+  <title> E-commerce product page</title>
   <link rel="stylesheet" href="src/output.css">
   
 </head>
 <body class="">
   <header class="flex  justify-around pt-10">
     <div id ="navbar1" class="flex">
-    <h2 class="text-4xl font-bold cursor-pointer">sneakers</h2>
+    <h2 class="text-3xl font-bold cursor-pointer">sneakers</h2>
     <div class="flex  mt-2.5 ml-10 ">
     <p class="ml-6 font-light cursor-pointer">Collections</p>
     <p class="ml-6 font-light cursor-pointer" >Men</p>
@@ -27,39 +27,45 @@
       </div>
     </div>
   </header>
-
-  <main>
-    <div id ="img-container">
-      <img src="images/image-product-1.jpg">
-      <div id="small-img-container">
-        <img src="images/image-product-1-thumbnail.jpg" alt="">
-        <img src="images/image-product-2-thumbnail.jpg" alt="">
-        <img src="images/image-product-3-thumbnail.jpg" alt="">
-        <img src="images/image-product-4-thumbnail.jpg" alt="">
+  <main class="flex justify-center items-center p-32 ml-32">
+    <div class="flex justify-around ">
+      <div id ="img-container">
+      <img src="images/image-product-1.jpg" class="w-3xl h-92 rounded-lg">
+      <div id="small-img-container" class="flex mt-4 justify-around">
+        <img src="images/image-product-1-thumbnail.jpg" alt="" class="w-22 h-22 rounded-lg border-3 border-transparent hover:border-[hsl(26,_100%,_55%)] transition-colors duration-300 cursor-pointer">
+        <img src="images/image-product-2-thumbnail.jpg" alt="" class="w-22 h-22 rounded-lg border-3 border-transparent hover:border-[hsl(26,_100%,_55%)] transition-colors duration-300 cursor-pointer">
+        <img src="images/image-product-3-thumbnail.jpg" alt="" class="w-22 h-22 rounded-lg border-3 border-transparent hover:border-[hsl(26,_100%,_55%)] transition-colors duration-300 cursor-pointer">
+        <img src="images/image-product-4-thumbnail.jpg" alt="" class="w-22 h-22 rounded-lg border-3 border-transparent hover:border-[hsl(26,_100%,_55%)] transition-colors duration-300 cursor-pointer">
       </div>
     </div>
-    <div id ="text-container">
-      <p>SNEAKER COMPANY</p>
-      <h1>Fall Limited Edition Sneakers</h1>
-      <p>
+    <div id ="text-container" class="ml-30 p-10 ">
+      <p class="font-semibold text-xs text-gray-500">SNEAKER COMPANY</p>
+      <h1 class="font-bold text-4xl w-92 mt-4">Fall Limited Edition Sneakers</h1>
+      <p class="font-medium mt-6 text-gray-500 ">
   These low-profile sneakers are your perfect casual wear companion. Featuring a 
   durable rubber outer sole, they’ll withstand everything the weather can offer.
     </p>
-  <div id ="price-container">
-    <h1> $250.00</h1>
-    <h2>50%</h2>
+  <div id ="price-container" class="flex mt-4">
+    <h1 class="text-2xl font-bold"> $250.00</h1>
+    <h2 class="ml-4 bg-black text-white font-bold rounded-lg p-0.6 h-6 w-11 text-center mt-1">50%</h2>
   </div>
-  <div id ="buttons">
-     <div id ="button-container">
-        <button> - </button>
-        <h3>3</h3>
-        <button> + </button>
+  <p class="line-through text-gray-500 font-semibold">$250.00</p>
+  <div id ="buttons" class="flex mt-4 ">
+     <div id ="button-container" class="flex bg-orange-50 px-5 rounded-lg py-1.5 p-1">
+        <button><img src="images/icon-minus.svg" alt=""> </button>
+        <h3 class="font-bold mt-1 ml-10">3</h3>
+        <button class="ml-10"><img src="images/icon-plus.svg" alt=""> </button>
      </div>
-     <button>
-      <img src="images/icon-cart.svg" alt="">
+     <button class="flex  bg-amber-500 p-3 rounded-lg ml-4 h-10 w-40">
+      <img src="images/icon-cart.svg" alt="" class="w-4 h-4 text-black ml-4" >
+      <h4 class="font-bold text-xs ml-4 ">Add to cart</h4>
      </button>
   </div>
     </div>
+    </div>
   </main>
+  <script src="tailwind.config.js">
+
+  </script>
 </body>
 </html>
